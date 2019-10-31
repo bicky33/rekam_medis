@@ -15,6 +15,11 @@ use Ramsey\Uuid\Exception\UnsatisfiedDependencyException;
         mysqli_query($con,"insert into tb_obat (id_obat,nama_obat, ket_obat) values ('$uuid','$nama','$ket')") or die(mysqli_error($con)); 
         echo "<script>window.location='data.php';</script>";
     }else if (isset($_POST['edit'])){
+        $uuid = $_POST['id'];
+        $nama = trim(mysqli_real_escape_string($con, $_POST['nama']));
+        $ket  = trim(mysqli_real_escape_string($con, $_POST['ket']));
+        mysqli_query($con,"update tb_obat set nama_obat ='$nama', ket_obat='$ket' where id_obat='$uuid' ") or die(mysqli_error($con)); 
+        echo "<script>window.location='data.php';</script>";
 
     }
 
