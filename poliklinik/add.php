@@ -27,10 +27,10 @@
                                                 <tr>
                                                         <td><?=$i?></td>
                                                         <td>
-                                                                <input type="text" nama="<?=$i?>" class="form-control" required>
+                                                                <input type="text" name="nama-<?=$i?>" class="form-control" required>
                                                         </td>
                                                         <td>
-                                                                <input type="text" nama="<?=$i?>" class="form-control" required>
+                                                                <input type="text" name="gedung-<?=$i?>" class="form-control" required>
                                                         </td>
                                                 </tr>
                                             <?php

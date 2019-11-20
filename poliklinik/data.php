@@ -5,10 +5,9 @@
             <h1>Poliklinik</h1>
             <h4>
                <small>Data Poliklinik</small> 
-               <div class="pull-right">
-                    <a href="" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-refresh"></i></a>
-                    <a href="generate.php" class="btn btn-success btn-xs"><i class="glyphicon glyphicon-plush">Tambah Obat</i></a>
-
+               <div class="pull-right">   
+               <a href="data.php" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-refresh"></i></a>
+               <a href="generate.php" class="btn btn-success btn-xs"><i class="glyphicon glyphicon-plush">Tambah Poliklinik</i></a>
                </div>
             </h4>
             <div style="margin-bottom: 10px;">

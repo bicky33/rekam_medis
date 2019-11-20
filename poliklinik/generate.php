@@ -14,7 +14,7 @@
                     <form action="add.php" method="post">
                         <div class="form-group">
                             <label for="count_add">Banyaknya Record Yang akan ditambah </label>
-                            <input type="text" name="count_add" id="count_add" maxlength="2" patern="[0-9]+" class="form-control" required >
+                            <input type="text" name="count_add" id="count_add" maxlength="2" patern="[0-9]+" class="form-control" required>
                         </div>
 
                         <div class="form-group pull-right">
@@ -24,10 +24,6 @@
                 </div>
                 </div>
         </div>
-
-
-
-
 <?php
         include_once('../_footer.php');
 
