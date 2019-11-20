@@ -7,7 +7,8 @@
                <small>Data Poliklinik</small> 
                <div class="pull-right">
                     <a href="" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-refresh"></i></a>
-                    <a href="add.php" class="btn btn-success btn-xs"><i class="glyphicon glyphicon-plush">Tambah Obat</i></a>
+                    <a href="generate.php" class="btn btn-success btn-xs"><i class="glyphicon glyphicon-plush">Tambah Obat</i></a>
+
                </div>
             </h4>
             <div style="margin-bottom: 10px;">
