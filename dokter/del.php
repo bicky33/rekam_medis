@@ -1,3 +1,4 @@
+
 <?php
 
 require_once "../_config/config.php";
@@ -11,7 +12,7 @@ require "../_assets/libs/vendor/autoload.php";
 
             foreach($chk as $id){
 
-                $sql = mysqli_query($con, "Delete from tb_poliklinik where id_poli='$id'") or die (mysqli_erorr($con)); 
+                $sql = mysqli_query($con, "Delete from tb_dokter where id_dokter='$id'") or die (mysqli_erorr($con)); 
                 
             }
             if ($sql){

@@ -19,9 +19,7 @@
                                     <button type="submit" class="btn btn-primary">
                                         <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                                     </button>
-                        </div>
-
-                    
+                        </div>                  
             </div>
                 
                     <div class="table-responsive">
@@ -41,7 +39,7 @@
                                 <tbody>
                                           <?php 
                                                     $no = 1;
-                                                    $sql_poli = mysqli_query($con,"select * from tb_poliklinik") or die (mysqli_error($con));
+                                                    $sql_poli = mysqli_query($con,"select * from tb_poliklinik order by nama_poli asc") or die (mysqli_error($con));
                                                     if(mysqli_num_rows($sql_poli) >0){ 
                                                          while($data = mysqli_fetch_array($sql_poli)){?>
                                                             <tr>
