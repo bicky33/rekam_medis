@@ -19,10 +19,13 @@
     <!-- Bootstrap Core CSS -->
     <link href="<?=base_url('_assets/css/bootstrap.min.css');?>" rel="stylesheet">
     <link href="<?=base_url('_assets/css/simple-sidebar.css');?>" rel="stylesheet">
+    <link href="<?=base_url('_assets/libs/DataTables/datatables.min.css');?>" rel="stylesheet">
     <link rel="shortcut icon" href="<?=base_url('_assets/sda.png')?>" type="image/x-icon">
     
     <script src="<?=base_url('_assets/js/jquery.js')?>"></script>
     <script src="<?=base_url('_assets/js/bootstrap.min.js')?>"></script>
+    <script src="<?=base_url('_assets/libs/DataTables/datatables.min.js')?>"></script>
+    
 </head>
 
 <body>
@@ -43,7 +46,7 @@
                         <a href="<?=base_url('dashboard')?>">Dashboard</a>
                     </li>
                     <li>
-                        <a href="#">Data Pasien</a>
+                        <a href="<?=base_url('pasien/data.php')?>">Data Pasien</a>
                     </li>
                     <li>
                         <a href="<?=base_url('dokter/data.php')?>">Data Dokter</a>

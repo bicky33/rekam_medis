@@ -25,7 +25,7 @@
             </div>
                 
                     <div class="table-responsive">
-                        <table class="table table-striped table-bordered table-hover">
+                        <table class="table table-striped table-bordered table-hover" id="dokter">
                                 <thead>
                                     <tr>
                                         <th> <center><i class="glyphicon glyphicon-cog"></i><center></th>
@@ -74,9 +74,10 @@
 
                     <div class="row " >
 
-                    <h3 align="center"> Data Persebaran</h3>
+                    <center>
+                    <h3 syle="text-align:center; "> Data Persebaran</h3>
 
-                                                <div id="canvas-holder" style="width:90%;">
+                                                <div id="canvas-holder" style="width:50%;">
                                     <canvas id="chart-area"></canvas>
                                 </div>
 
@@ -135,8 +136,22 @@
                                 </script>
 
                     </div>
+                    </center>
                     <script>
                                 $(document).ready(function(){//
+
+                                    $('#dokter').DataTable(
+                                        {
+                                            columnDefs: [
+                                                    // "searchable": false,
+                                                    // "orderable" : false, 
+                                                    // "targets"   : [0,6]  
+                                            ],
+
+                                            "order" : [1, "asc"]
+                                        }
+                                    );
+
                                     $('#select_all').on('click', function(){//
                                         if(this.checked){//
                                             $('.check').each(function(){//
