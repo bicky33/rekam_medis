@@ -22,15 +22,19 @@ use Ramsey\Uuid\Exception\UnsatisfiedDependencyException;
         }
     }
     else if (isset($_POST['edit'])){
-        $uuid = $_POST['id'];
+        $uuid = $_POST['id'] ;
         $identitas = trim(mysqli_real_escape_string($con, $_POST['no_identitas']));
         $nama = trim(mysqli_real_escape_string($con, $_POST['nama']));
-        $spesialis  = trim(mysqli_real_escape_string($con, $_POST['spesialis']));
+        $kelamin  = trim(mysqli_real_escape_string($con, $_POST['kelamin']));
         $alamat = trim(mysqli_real_escape_string($con, $_POST['alamat']));
         $telepon = trim(mysqli_real_escape_string($con, $_POST['no_telepon']));
-        mysqli_query($con,"update tb_pasien set no_identitas='$identitas', nama_pasien ='$nama', kelamin='$kelamin', alamat = '$alamat', no_telepon = '$telepon' where id_dokter='$uuid' ") or die(mysqli_error($con)); 
+        // $sql_cek_identitas = mysqli_query($con,"select * from tb_pasien where no_identitas = '$identitas'and id_pasien != '$uuid' ") or die(mysqli_error($con)); 
+        // if (mysqli_num_rows($sql_cek_identitas)>0){
+        //     echo "<script>alert('Nomor Identitas Telah terdaftar sebelumnya!!!'); window.location='edit.php?id=$uuid';</script>";
+        // }else {
+        mysqli_query($con,"UPDATE tb_pasien set no_identitas = '$identitas',nama_pasien = '$nama', jenis_kelamin = '$kelamin', alamat = '$alamat', no_telepon = '$telepon' where id_pasien = '$uuid' ") or die(mysqli_error($con)); 
         echo "<script>window.location='data.php';</script>";
-
-    }
+    // }
+}
 
 ?>

@@ -3,7 +3,8 @@
     date_default_timezone_set('Asia/Jakarta'); 
     session_start(); 
 
-    $con = mysqli_connect('localhost','root','','rekam_medis');
+    require_once "conn.php"; 
+    $con = mysqli_connect($conn['host'],$conn['user'],$conn['pass'],$conn['db']);
 
     if (mysqli_connect_errno()){
 
