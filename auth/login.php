@@ -54,19 +54,25 @@
                     }
             
             ?>
-                <form action="" method="post" class="navbar-form">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                        <input type="text" name="username" placeholder="username" require autofocus class="form-control">
+            <form action="" method="post" class="form-horizontal">
+                <div class="form-group">
+                    <div class="input-group col-md-4">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user col-md-2"></i></span>
+                        <input type="text" name="username" placeholder="username" require autofocus class="form-control col-md-2">
                     </div>
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                </div>
+                <div class="form-group">
+                    <div class="input-group col-md-4">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock col-md-2"></i></span>
                         <input type="password" name="kata-sandi" placeholder="password" class="form-control" require>
                     </div>
+                </div>
+                <div class="form-group ">
                     <div class="input-group">
                         <input type="submit" value="login" name="login" class="btn btn-primary">
                     </div>
-                </form>
+                </div>
+            </form>
             </div>
         </div>
     </div>

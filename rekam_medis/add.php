@@ -81,6 +81,10 @@ include_once('../_header.php');
                                     </div>
                         </form>
                     </div>
+                    <script>
+                        CKEDITOR.replace('keluhan');
+                        CKEDITOR.replace('diagnosa');
+                    </script>
             </div>
     </div>
 <?php

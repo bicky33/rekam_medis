@@ -48,7 +48,7 @@
                            
                                                          while($data = mysqli_fetch_array($sql_poli)){?>
                                                             <tr>
-                                                                    <td align="center"><a href="edit.php?id=<?=$data['id_dokter']?>" class="btn btn-warning btn-sm"> <i class="glyphicon glyphicon-edit"></i></a> </td>
+                                                                    <td align="center"><a href="edit.php?id=<?=$data['id_dokter']?>" class="btn btn-warning btn-sm"> <i class="glyphicon glyphicon-edit"></i></a></td>
                                                                     <td><?=$no++?></td>
                                                                     <td><?=$data['nama_dokter']?></td>
                                                                     <td><?=$data['spesialis']?></td>
